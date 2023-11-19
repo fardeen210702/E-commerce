@@ -1,7 +1,7 @@
 import {  useFilterContext } from '../FilterContext'
 // import Product from './Product'
 import { Link } from 'react-router-dom';
-import { useProductContext } from '../context';
+import { useProductContext } from '../Context';
 
 
 function FilteredData() {

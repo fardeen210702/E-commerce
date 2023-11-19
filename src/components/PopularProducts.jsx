@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { useProductContext } from '../context'
+import { useProductContext } from '../Context'
 function PopularProducts() {
     const {popularItems,isLoading,handleScroll} = useProductContext()
     if(isLoading){
