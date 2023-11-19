@@ -695,7 +695,7 @@ del{
 
 .left-container > figure > img{
 height: 45px;
-object-fit: cover;
+object-fit: contain;
 width: 100px;
 
 }
@@ -703,7 +703,7 @@ width: 100px;
 .right-container > img{
     width: 250px;
     height: 200px;
-    object-fit: cover;
+    object-fit: contain;
 }
 .full,.half,.empty{
     color: #efcb01;
