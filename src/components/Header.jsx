@@ -14,13 +14,10 @@ function Header() {
                     <p>CartNow</p>
                 </div>
                 </Link>
-                <div className="search-input">
-                    <input type="text" placeholder='search...'/>
-                    <p>Search </p>
-                </div>
+                
                 <div className="login-sign">
-                    <button>Login</button>|
-                    <button className='signIn'>Signin</button>
+                
+                    <button className='signIn'>LOGIN</button>
                    <Link to='/cart'>
                    
                     <i className="fa-solid fa-cart-shopping"></i>

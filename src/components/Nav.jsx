@@ -7,9 +7,7 @@ function Nav() {
         <Link to='/home' className='Link'>
             HOME
         </Link>
-        <Link to='/categories' className='Link'>
-        CATEGORIES
-        </Link>
+     
         <Link to='/shop' className='Link'>
             SHOP
         </Link>

@@ -7,6 +7,29 @@ function FilterProductReducer(state, action) {
                 filterAll: [...action.payload],
                 allProducts: [...action.payload]
             }
+            case 'UPDATE_ARRAY':
+                const {name,value} =action.payload;
+                return{
+                    ...state,
+                    filter:{
+                        ...state.filter,
+                        [name]:value
+                    }
+                }
+                case 'UPDATE_ARRAY_SUCCESFUL':
+                    let {allProducts} = state;
+                    let newAllProducts = [...allProducts];
+
+                    const {text} = state.filter;
+                  if(text){
+                    newAllProducts = newAllProducts.filter((e)=>{
+                        return e.title.toLowerCase().includes(text)
+                    })
+                  }
+                    return{
+                        ...state,
+                        filterAll:newAllProducts
+                    }
 
 
 

@@ -1,10 +1,13 @@
 import { Link } from 'react-router-dom'
 import '../App.css'
+import { useProductContext } from '../Context'
 // import data from '../pages/data'
 import image1 from '../assets/image1.jpeg'
 function ShopNow() {
+  const {handleScroll} = useProductContext()
+
     return (
-        <div className='shopnow'>
+        <div className='shopnow' onClick={handleScroll}>
             <div className="shop-container">
                 <div className="information">
                     <div className="info-cont">

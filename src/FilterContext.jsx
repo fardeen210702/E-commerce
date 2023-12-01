@@ -6,7 +6,10 @@ const FilterProducts = createContext()
 
 const initialstate = {
     filterAll:[],
-    allProducts:[]
+    allProducts:[],
+    filter:{
+        text:''
+    }
 }
 
 import React, { useContext } from 'react'
@@ -17,12 +20,21 @@ function FilterContext({children}) {
 
 useEffect(() => {
     dispatch({type:'FILTER_DATA',payload:products})
- 
+    
 }, [products])
+useEffect(() => {
+    dispatch({type:"UPDATE_ARRAY_SUCCESFUL"})
+ 
+}, [products,state.filter])
 
 
+function updateFilter(e){
+let name = e.target.name;
+let value = e.target.value;
+  dispatch({type:"UPDATE_ARRAY" , payload:{name,value}})
+}
   return (
-   <FilterProducts.Provider value={{...state}}>
+   <FilterProducts.Provider value={{...state,updateFilter}}>
     {children}
    </FilterProducts.Provider>
   )
