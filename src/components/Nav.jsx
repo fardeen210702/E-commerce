@@ -7,7 +7,9 @@ function Nav({value,setValue}) {
     return (
     <>
 
-        {  value&& <div className='Navbar' onClick={()=>setValue(!value)} >
+        {/* {  value&&  */}
+        <div className='Navbar' onClick={()=>setValue(!value)} >
+
             <Link to='/home' className='Link'>
                 HOME
             </Link>
@@ -28,7 +30,7 @@ function Nav({value,setValue}) {
 
 
         </div>
-            }
+            {/* } */}
     </>
     )
 }
