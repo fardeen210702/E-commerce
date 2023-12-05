@@ -28,7 +28,7 @@ function Footer() {
                             <p >Contact</p>
                         </Link>
                         <p onClick={handleScroll}>FAQs</p>
-                        <Link to='/categories' className='Link'  onClick={handleScroll}>
+                        <Link to='/category' className='Link'  onClick={handleScroll}>
                             <p>Category</p>
 
                         </Link>

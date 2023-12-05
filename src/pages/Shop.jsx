@@ -7,6 +7,7 @@ function Shop() {
       <div className="shop-data-container" >
         <Search/>
         
+        
         <FilteredData/>
 
       </div>

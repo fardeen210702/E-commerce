@@ -1,7 +1,7 @@
 import React from 'react'
 import {  useParams } from 'react-router-dom'
 import { useProductContext } from '../Context';
-import Trendings from '../pages/Trendings'
+// import Trendings from '../pages/Trendings'
 
 import Product from '../components/Product';
 import FilteredData from '../components/FilteredData';
