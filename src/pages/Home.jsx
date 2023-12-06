@@ -6,13 +6,13 @@ import ShopNow from '../components/ShopNow'
 
 function Home() {
   return (
-    <div>
+    <>
       <Slider/>
       <ShipDetails/>
       <ShopNow/>
       <PopularProducts/>
 
-    </div>
+    </>
   )
 }
 

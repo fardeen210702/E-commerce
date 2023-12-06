@@ -1,5 +1,5 @@
 import { createContext, useEffect, useReducer } from "react";
-import { useProductContext } from "./Context";
+import { useProductContext } from "../src/Context";
 import reducer from "./reducer/FilterProductReducer";
 
 const FilterProducts = createContext()

@@ -5,9 +5,10 @@ import Nav from './Nav'
 function Header() {
     const [value, setValue] = useState(false)
 
-//   function hanldeDisplay(){
-//     setValue(!value)
-//   }
+  function hanldeDisplay(){
+    setValue(!value)
+  }
+
    
     
     return (
@@ -27,7 +28,7 @@ function Header() {
                     <i className="fa-solid fa-cart-shopping"></i>
                    </Link>
                    <div className="menubar" >
-            {/* <i class="fa-solid fa-bars" onClick={()=>hanldeDisplay()}></i> */}
+            <i class="fa-solid fa-bars" onClick={()=>hanldeDisplay()}></i>
         </div>
 
                 </div>
