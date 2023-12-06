@@ -3,8 +3,8 @@ import React, { useState } from 'react'
 function Image({images =[{item :''}]}) {
     const [mainImage, setMainImage] = useState(images[0])
   return (
-    <div className='Image-container'>
-        <div className="left-container">
+    <div  className='Image-container'>
+        <div  className="left-container">
             {
                 images.map((item,id)=>(
                 <figure  key={id}>
