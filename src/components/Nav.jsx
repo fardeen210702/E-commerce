@@ -8,7 +8,8 @@ function Nav({value,setValue}) {
     <>
 
         {  value&& 
-        <div className='Navbar' onClick={()=>setValue(!value)} >
+        <div className='Navbar'> 
+         {/* onClick={()=>setValue(!value)}   add this to navbar if want to set value to false */}
 
             <Link to='/home' className='Link'>
                 HOME
