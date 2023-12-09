@@ -18,7 +18,7 @@ function SingleProductPage() {
   return (
     <> {
       products.map(elem => {
-        return elem.id == id &&  <Product key={elem.id} {...elem}  />
+        return elem.id == id &&  <Product  {...elem}  />
         
 
       })

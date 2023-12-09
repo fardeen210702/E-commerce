@@ -4,13 +4,16 @@ import App from './App.jsx'
 import './index.css'
 import { Context } from './Context.jsx'
 import { FilterContext } from './FilterContext.jsx'
+// import { CartContext } from './CartContext.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Context>
 <FilterContext>
+{/* <CartContext> */}
 
     <App />
+{/* </CartContext> */}
 </FilterContext>
     </Context>
   </React.StrictMode>,

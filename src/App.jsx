@@ -1,5 +1,8 @@
 import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
 import './App.css'
+import './responsiveness/laptops.css'
+import './responsiveness/smallscreens.css'
+import './responsiveness/tablet.css'
 import './responsiveness/phone.css'
 import Header from './components/Header'
 import Home from './pages/Home'

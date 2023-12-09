@@ -28,7 +28,7 @@ function Header() {
                     <i className="fa-solid fa-cart-shopping"></i>
                    </Link>
                    <div className="menubar" >
-            <i class="fa-solid fa-bars" onClick={()=>hanldeDisplay()}></i>
+            <i className="fa-solid fa-bars" onClick={()=>hanldeDisplay()}></i>
         </div>
 
                 </div>
