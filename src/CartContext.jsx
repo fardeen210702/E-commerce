@@ -8,7 +8,7 @@ const cartData = createContext()
 function CartContext({children}) {
     function updateData(){
         let updatedCart = localStorage.getItem('cartData')
-        if(updatedCart===[]){
+        if(!updatedCart){
             return []
         }
         else{
