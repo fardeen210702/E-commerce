@@ -29,7 +29,7 @@ const getProducts=async (url)=>{
 try {
     const res =await axios.get(url)
     const products =await res.data.products
-    console.log(products,'data fetched');
+    // console.log(products,'data fetched');
     dispatch({type:'DATA_RENDERING' ,payload:products})
     dispatch({type:'MOBILE_DATA' ,payload:products})
     dispatch({type:'LAPTOP_DATA' ,payload:products})

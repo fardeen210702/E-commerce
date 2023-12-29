@@ -2,12 +2,17 @@ import { Link } from "react-router-dom"
 import Image from '../components/Image';
 import Rating from '../components/Rating';
 import { useState } from "react";
+import { useCartContext } from "../CartContext";
+import { useProductContext } from "../Context";
+
 
 
 
 function Product(elem) {
+  const {handleScroll} = useProductContext()
+  const {addData} = useCartContext()
   const [count, setCount] = useState(0)
-  const { title, price, rating, images, stock, description, brand } = elem
+  const {id, title, price, rating, images, stock, description, brand } = elem
   const increment = () => {
     count < 1 ? setCount(count + 1) : setCount(1)
   }
@@ -16,7 +21,7 @@ function Product(elem) {
   }
   return (
     <>
-      <div className="single-product-container">
+      <div className="single-product-container" key={id}>
         <div className="top-container">
           <i className="fa-solid fa-chevron-left"></i>
           <Link to='/' className='Link'>
@@ -58,8 +63,8 @@ function Product(elem) {
               {count}
               <button onClick={decrement}>+</button>
             </div>
-            <Link to='/cart' className="addtocart">
-              <button>Add To Cart</button>
+            <Link to='/cart' className="addtocart" onClick={()=>addData(id,count,elem)} >
+              <button onClick={handleScroll}>Add To Cart</button>
             </Link>
 
 

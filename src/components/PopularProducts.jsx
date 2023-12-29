@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useProductContext } from '../Context'
+import Rating from './Rating'
 function PopularProducts() {
     const {popularItems,isLoading,handleScroll} = useProductContext()
     if(isLoading){
@@ -31,10 +32,12 @@ function PopularProducts() {
                         <h3>{item.title}</h3>
                         <h3>Price: {item.price}$</h3>
                     </div>
-                    <Link to='/cart' className='Add-to-cart' >
+                    {/* <Link to='/cart' className='Add-to-cart' >
               <button>Add To Cart</button>
-              </Link>
+              </Link> */}
+              <button className='addtocartbtn' >Add To Cart</button>
 
+    
                 </div>
                     </Link>
 
