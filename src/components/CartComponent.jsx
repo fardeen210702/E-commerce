@@ -19,7 +19,7 @@ function CartComponent(elem) {
                     {price * count}
                 </div>
                 <div className="delete">
-                <i class="fa-solid fa-trash" onClick={()=>handleDeleteProduct(id)}></i>
+                <i className="fa-solid fa-trash" onClick={()=>handleDeleteProduct(id)}></i>
                 </div>
 
             </div>

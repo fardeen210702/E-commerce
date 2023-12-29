@@ -13,7 +13,7 @@ function CartReducer(state,action) {
         }
         return{
             ...state,
-            cart:[ ...new Set( [...state.cart , CartProduct])]
+            cart: [...state.cart , CartProduct]
             
         }
 
