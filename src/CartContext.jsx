@@ -17,7 +17,7 @@ function CartContext({children}) {
     //     }
     // }    
     const initialState = {
-        // cart:[],
+        cart:[],
         // cart:updateData(),
         
     }
