@@ -11,10 +11,10 @@ import { useProductContext } from "../Context";
 function Product(elem) {
   const {handleScroll} = useProductContext()
   const {addData} = useCartContext()
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(1)
   const {id, title, price, rating, images, stock, description, brand } = elem
   const increment = () => {
-    count < 1 ? setCount(count + 1) : setCount(1)
+    count === 1 ? setCount(count + 1) : setCount(1)
   }
   const decrement = () => {
     count < stock ? setCount(count + 1) : setCount(stock)
