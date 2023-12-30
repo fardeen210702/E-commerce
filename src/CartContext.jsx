@@ -6,19 +6,19 @@ const cartData = createContext()
 
 
 function CartContext({children}) {
-    // function updateData(){
-    //     let updatedCart = localStorage.getItem('cartData')
-    //     if(!updatedCart){
-    //         return []
-    //     }
-    //     else{
-    //         return JSON.parse(updatedCart)
+    function updateData(){
+        let updatedCart = localStorage.getItem('cartData')
+        if(!updatedCart){
+            return []
+        }
+        else{
+            return JSON.parse(updatedCart)
     
-    //     }
-    // }    
+        }
+    }    
     const initialState = {
-        cart:[],
-        // cart:updateData(),
+        // cart:[],
+        cart:updateData(),
         
     }
 
@@ -28,9 +28,9 @@ function CartContext({children}) {
         dispatch({type:"ADDTOCART" , payload:{id,count,elem}})
     }
     // locl storage
-    // useEffect(() => {
-    //   localStorage.setItem('cartData',JSON.stringify(state.cart))
-    // }, [state.cart])
+    useEffect(() => {
+      localStorage.setItem('cartData',JSON.stringify(state.cart))
+    }, [state.cart])
     
     function handleDeleteProduct(id){
    dispatch({type:'REMOVE_ITEM' ,payload:id})
