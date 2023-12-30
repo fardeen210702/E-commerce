@@ -20,7 +20,7 @@ function CartReducer(state,action) {
     }
 if(action.type ==='REMOVE_ITEM'){
 const updateCart = state.cart.filter((elem)=> elem.id !==action.payload)
-const newUpdateCart = new Set(updateCart)
+// const newUpdateCart = new Set(updateCart)  //unecessary code line
 return{
     ...state,
     cart:updateCart

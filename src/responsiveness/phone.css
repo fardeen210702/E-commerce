@@ -11,6 +11,16 @@
     .login-sign>.menubar {
         display: flex;
     }
+    .menubar > i{
+        margin: 0px;
+        padding: 0 2px 0 0;
+    }
+  
+    .info-cont{
+        padding: 5px;
+    }
+    
+
 
     .Navbar {
         display: flex;

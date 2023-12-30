@@ -9,11 +9,40 @@
     --fourth-color: #c4e3f545;
 }
 
+/*  LOGIN SNIPPET CSS */
+
+/* .snippet{
+    width: 300px;
+    height: 250px;
+    position: fixed;
+    top: 20%;
+    border: 1px solid white;
+    left: auto;
+    z-index: 10;
+    color: var(--secondary-color);
+    display: flex;
+    border-radius: 5px ;
+    box-shadow: 0 0 10px black;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    
+    background-color: rgb(255, 255, 255);
+}
+
+.btns > .signIn{
+    background-color: var(--third-color);
+    color: var(--primary-color);
+} */
+
+
 .app {
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* position: relative; */
     flex-direction: column;
 }
 
@@ -76,7 +105,7 @@
 .signIn {
     background-color: var(--secondary-color);
     color: var(--primary-color);
-    border-radius: 5px;
+    border-radius: 2px;
     padding: 4px 15px;
 }
 
@@ -111,6 +140,9 @@ button {
     cursor: pointer;
     margin: 5px 20px;
 
+}
+.userName > img{
+    border-radius: 50%;
 }
 
 .Link {
@@ -625,6 +657,10 @@ textarea {
     padding: 20px;
     display: flex;
     flex-direction: column;
+   
+}
+.info-cont > h1 > span{
+    color: red;
 }
 
 .info-cont>h1 {

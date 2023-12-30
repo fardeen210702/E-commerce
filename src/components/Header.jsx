@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Nav from './Nav'
+import LoginBtn from './LoginBtn'
 
 function Header() {
     const [value, setValue] = useState(false)
@@ -21,9 +22,10 @@ function Header() {
                 </Link>
                 
                 <div className="login-sign">
-                
-                    <button className='signIn'>LOGIN</button>
-                   <Link to='/cart'>
+               
+                    {/* <button className='signIn'>LOGIN</button> */}
+                    <LoginBtn />
+                   <Link to='/cart' className='cartIcon'>
                    
                     <i className="fa-solid fa-cart-shopping"></i>
                    </Link>
